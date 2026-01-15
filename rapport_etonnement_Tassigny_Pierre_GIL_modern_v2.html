@@ -348,6 +348,24 @@ html, body{
 }
 .answerbox p:last-child{ margin-bottom: 0 !important; }
 
+
+/* Fix Layout V3 : Colonne unique et paragraphes empilés */
+.questions-grid {
+    grid-template-columns: 1fr !important;
+}
+
+.answerbox {
+    display: block !important; /* Was flex, caused row layout for paragraphs */
+    padding-bottom: 8mm !important; /* Some extra padding for comfort */
+}
+
+/* Ensure formatting inside is clean */
+.answerbox p {
+    display: block !important;
+    margin-bottom: 4mm !important;
+    text-align: justify;
+}
+
 </style>
 </head>
 <body>

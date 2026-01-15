@@ -366,6 +366,21 @@ html, body{
     text-align: justify;
 }
 
+
+/* Fix Layout V4 : Pages extensibles pour éviter de couper le contenu */
+.page {
+    height: auto !important;
+    min-height: 210mm !important;
+    overflow: visible !important;
+    padding-bottom: 25mm !important; /* Make space for the footer */
+    box-sizing: border-box !important;
+}
+
+/* Adjust footer to stay at bottom of the expanded page */
+.footer {
+    bottom: 8mm !important;
+}
+
 </style>
 </head>
 <body>
